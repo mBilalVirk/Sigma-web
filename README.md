@@ -162,3 +162,208 @@ If you're using something like **PHP, Laravel, Node.js**, etc., your structure m
 | Tools    | Git, Vite, Webpack, NPM         |
 
 ---
+
+
+
+## 🏷️ HTML Heading Tags
+
+HTML provides **six heading tags** to define headings on a webpage, from `<h1>` (most important) to `<h6>` (least important).
+
+### ✅ Syntax:
+
+```html
+<h1>This is a heading 1</h1>
+<h2>This is a heading 2</h2>
+<h3>This is a heading 3</h3>
+<h4>This is a heading 4</h4>
+<h5>This is a heading 5</h5>
+<h6>This is a heading 6</h6>
+```
+
+---
+
+## 📚 Explanation
+
+| Tag    | Purpose                 | Default Size    |
+| ------ | ----------------------- | --------------- |
+| `<h1>` | Main title of the page  | Largest         |
+| `<h2>` | Sub-heading of `<h1>`   | Smaller than h1 |
+| `<h3>` | Sub-heading of `<h2>`   | Smaller than h2 |
+| `<h4>` | Sub-heading of `<h3>`   | ...             |
+| `<h5>` | Sub-heading of `<h4>`   | ...             |
+| `<h6>` | Least important heading | Smallest        |
+
+---
+
+### 🎯 Key Points:
+
+* Use **only one `<h1>` per page** for SEO (Search Engine Optimization) and accessibility.
+* Headings help organize content and improve **readability**.
+* Browsers apply **bold and spacing** by default.
+* Headings are **block-level elements** (they start on a new line).
+
+---
+
+### 🧠 Example:
+
+```html
+<h1>Welcome to My Website</h1>
+<h2>About Us</h2>
+<h3>Our Mission</h3>
+<h3>Our Team</h3>
+<h2>Contact</h2>
+```
+
+---
+
+### 💡 Tip:
+
+If you're using CSS, you can **customize** how each heading looks:
+
+```css
+h1 {
+  color: darkblue;
+  font-size: 36px;
+  font-weight: bold;
+}
+```
+
+---
+
+
+
+## 📄 What is Lorem Ipsum?
+
+**"Lorem Ipsum"** is **dummy text** used in the publishing and web design industry. It's used as placeholder content when the actual text is not available yet.
+
+---
+
+## 💬 Example:
+
+```html
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+```
+
+This will display as:
+
+> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+
+---
+
+## 🧠 Why Use Lorem Ipsum?
+
+* To **focus on design/layout** without being distracted by real content.
+* To **fill space** in templates or website mockups.
+* It shows how **text will look** once added.
+
+---
+
+## 📚 Meaning of the Text?
+
+"Lorem Ipsum" is actually derived from **Latin** literature from 45 BC. But the modern version is **nonsense text**, used purely for layout.
+
+It **doesn't mean anything**, which makes it ideal for mockups because readers won't focus on the words.
+
+---
+
+## 🧰 How to Use in HTML?
+
+```html
+<h2>About Our Company</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam convallis eros ac massa vestibulum.</p>
+```
+
+---
+
+## ✨ Shortcut in Code Editors
+
+In **VS Code** or many editors, you can type:
+
+```html
+lorem50
+```
+
+and press **Tab**, and it will generate 50 words of lorem text.
+
+---
+
+## 🔗 `<a>` Tag in HTML
+
+The `<a>` tag stands for **anchor** and is used to **create hyperlinks** — links that users can click to go to another page, website, or section of the same page.
+
+---
+
+## ✅ Syntax:
+
+```html
+<a href="URL">Link Text</a>
+```
+
+---
+
+## 📘 Example:
+
+```html
+<a href="https://www.google.com">Visit Google</a>
+```
+
+🖱️ Output:
+👉 [Visit Google](https://www.google.com)
+
+---
+
+## 🔍 Attributes of `<a>` Tag:
+
+| Attribute  | Description                                                |
+| ---------- | ---------------------------------------------------------- |
+| `href`     | The URL of the page the link goes to                       |
+| `target`   | Defines where to open the link (`_blank` opens in new tab) |
+| `title`    | Tooltip text on hover                                      |
+| `download` | Downloads the linked file instead of opening it            |
+
+---
+
+## 🌐 Example with Attributes:
+
+```html
+<a href="https://example.com" target="_blank" title="Go to Example">Click Here</a>
+```
+
+🔸 Opens in a new tab
+🔸 Shows "Go to Example" when hovered
+
+---
+
+## ⛔ Empty Link (used in templates or JavaScript links)
+
+```html
+<a href="#">This does nothing</a>
+```
+
+---
+
+## 📎 Anchor Link (same page scroll)
+
+```html
+<a href="#contact">Go to Contact Section</a>
+...
+<h2 id="contact">Contact Us</h2>
+```
+
+---
+
+## 🎯 Styling Example with CSS:
+
+```html
+a {
+  color: blue;
+  text-decoration: none;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+```
+
+---
+

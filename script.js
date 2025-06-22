@@ -1,1 +1,1 @@
-alert("Welcome to web development course")
+// alert("Welcome to web development course")
