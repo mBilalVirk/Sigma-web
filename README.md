@@ -367,3 +367,479 @@ a:hover {
 
 ---
 
+# 🖼️ 1. `<img>` Tag – Image in HTML
+
+## ✅ Basic Syntax:
+
+```html
+<img src="image.jpg" alt="Description">
+```
+
+## 📘 Attributes:
+
+| Attribute | Description                   |
+| --------- | ----------------------------- |
+| `src`     | Image path or URL             |
+| `alt`     | Alternate text if image fails |
+| `width`   | Width in pixels or %          |
+| `height`  | Height in pixels or %         |
+
+### 🎯 Example:
+
+```html
+<img src="https://via.placeholder.com/150" alt="Sample Image" width="150" height="150">
+```
+
+## ✨ Styling:
+
+```css
+img {
+  border-radius: 10px;
+  border: 2px solid black;
+}
+```
+
+### 📙 Urdu:
+
+`<img>` ٹیگ ویب سائٹ پر تصویر لگانے کے لیے استعمال ہوتا ہے۔
+`src` تصویر کا پتہ ہوتا ہے، `alt` تصویر کے نہ دکھنے کی صورت میں متبادل ٹیکسٹ۔
+
+---
+
+# 📋 2. `<table>` Tag – Table in HTML
+
+## ✅ Basic Structure:
+
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bilal</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Ali</td>
+      <td>30</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+## 📘 Tags Explained:
+
+| Tag                  | Meaning              |
+| -------------------- | -------------------- |
+| `<table>`            | Starts table         |
+| `<tr>`               | Table row            |
+| `<th>`               | Table heading (bold) |
+| `<td>`               | Table data (cell)    |
+| `<thead>`, `<tbody>` | Table sections       |
+
+## ✨ CSS Styling:
+
+```css
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+}
+```
+
+### 📙 Urdu:
+
+`<table>` ٹیگ جدول (table) بنانے کے لیے ہوتا ہے۔
+`<tr>` ہر لائن کے لیے، `<th>` سرخی کے لیے، `<td>` ڈیٹا کے لیے۔
+
+---
+
+# 📑 3. Lists in HTML – Ordered, Unordered, Description
+
+### 📌 Types of Lists:
+
+### ✅ a. **Unordered List** (bullets)
+
+```html
+<ul>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ul>
+```
+
+### ✅ b. **Ordered List** (numbers)
+
+```html
+<ol>
+  <li>Wake up</li>
+  <li>Brush</li>
+  <li>Code</li>
+</ol>
+```
+
+### ✅ c. **Description List** (terms & definitions)
+
+```html
+<dl>
+  <dt>HTML</dt>
+  <dd>HyperText Markup Language</dd>
+  <dt>CSS</dt>
+  <dd>Cascading Style Sheets</dd>
+</dl>
+```
+
+## 🎨 Styling Example:
+
+```css
+ul {
+  list-style-type: square;
+}
+ol {
+  list-style-type: upper-roman;
+}
+```
+
+### 📙 Urdu:
+
+* `<ul>` بغیر نمبر والی فہرست (• bullets)
+* `<ol>` نمبر والی فہرست (1, 2, 3)
+* `<li>` ہر آئٹم
+* `<dl>` تعریفوں کی فہرست (مثال: glossary)
+
+---
+
+## ✅ Summary Table:
+
+| Feature | Tag                    | Purpose               |
+| ------- | ---------------------- | --------------------- |
+| Image   | `<img>`                | Show image            |
+| Table   | `<table>`              | Create rows & columns |
+| List    | `<ul>`, `<ol>`, `<li>` | Show itemized data    |
+
+---
+
+
+## 🚀 What Are Core Web Vitals?
+
+**Core Web Vitals** are a set of **three key performance metrics** introduced by Google to measure:
+
+1. **Page loading speed**
+2. **User interaction responsiveness**
+3. **Visual stability**
+
+These metrics directly impact your **website ranking** on Google and **user satisfaction**.
+
+---
+
+## 📊 The 3 Core Web Vitals
+
+| Metric  | Full Form                | Measures                                                                   | Good Score    |
+| ------- | ------------------------ | -------------------------------------------------------------------------- | ------------- |
+| 1️⃣ LCP | Largest Contentful Paint | **Loading time** of the biggest visible content (e.g., image, heading)     | **≤ 2.5 sec** |
+| 2️⃣ FID | First Input Delay        | **Interactivity** — how quickly your site responds when users click or tap | **≤ 100 ms**  |
+| 3️⃣ CLS | Cumulative Layout Shift  | **Visual stability** — how much layout shifts when content loads           | **≤ 0.1**     |
+
+---
+
+## 🔍 Explanation of Each:
+
+### 1. 🕒 **LCP (Largest Contentful Paint)**
+
+* Measures: When the main content becomes visible.
+* Example: If a banner image or large heading takes 3s to appear, LCP = 3s.
+* Target: **Under 2.5 seconds**
+
+### 2. ⚡ **FID (First Input Delay)**
+
+* Measures: Delay between user interaction (click/tap) and response.
+* Example: You click a button, and it takes 300ms to react → bad FID.
+* Target: **Under 100 milliseconds**
+
+### 3. 📐 **CLS (Cumulative Layout Shift)**
+
+* Measures: Content shifting unexpectedly while loading.
+* Example: A button jumps down as an ad loads.
+* Target: **Less than 0.1**
+
+---
+
+## ✅ How to Check Core Web Vitals
+
+You can use:
+
+* [PageSpeed Insights](https://pagespeed.web.dev/)
+* **Lighthouse** in Chrome DevTools
+* **Google Search Console** → Core Web Vitals Report
+* Web Vitals Chrome Extension
+
+---
+
+## 🧰 How to Improve Them?
+
+| Metric | Fixes                                                    |
+| ------ | -------------------------------------------------------- |
+| LCP    | Optimize images, use lazy loading, fast hosting          |
+| FID    | Minimize JavaScript, reduce third-party code             |
+| CLS    | Set image/video dimensions, avoid dynamic content shifts |
+
+---
+
+## 📙 In Urdu (اردو میں):
+
+**Core Web Vitals** تین اہم پیمائشیں ہیں جو یہ دیکھتی ہیں کہ آپ کی ویب سائٹ **کتنی تیزی سے لوڈ ہوتی ہے، کتنا responsive ہے، اور کتنی مستحکم دکھتی ہے**۔
+گوگل ان کو استعمال کرتا ہے تاکہ اچھی user experience والی ویب سائٹس کو زیادہ رینک دے۔
+
+---
+
+## 📝 What is a Form in HTML?
+
+An **HTML form** is used to **collect input from the user** and send it to a server for processing (like login, registration, search, etc.).
+
+```html
+<form> ... </form>
+```
+
+---
+
+## 🧱 Basic Structure:
+
+```html
+<form action="submit.php" method="post">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="username">
+  
+  <input type="submit" value="Submit">
+</form>
+```
+
+---
+
+## ⚙️ Important Form Attributes
+
+| Attribute      | Description                                   |
+| -------------- | --------------------------------------------- |
+| `action`       | URL or file where form data is sent           |
+| `method`       | `GET` or `POST` method                        |
+| `target`       | Where to display response (`_self`, `_blank`) |
+| `autocomplete` | On/off for browser autocomplete               |
+| `enctype`      | Encoding type (used for file uploads)         |
+
+---
+
+## 📬 Form Methods: GET vs POST
+
+| Method | Purpose                        | Data Visible in URL? | Secure? |
+| ------ | ------------------------------ | -------------------- | ------- |
+| `GET`  | Retrieve data (search)         | Yes                  | No      |
+| `POST` | Send data (login, file upload) | No                   | Yes     |
+
+---
+
+## 🔢 Common Form Input Types
+
+### 📌 1. Text Input
+
+```html
+<input type="text" name="username">
+```
+
+### 📌 2. Password
+
+```html
+<input type="password" name="pass">
+```
+
+### 📌 3. Email
+
+```html
+<input type="email" name="email">
+```
+
+### 📌 4. Radio Buttons
+
+```html
+<input type="radio" name="gender" value="male"> Male
+<input type="radio" name="gender" value="female"> Female
+```
+
+### 📌 5. Checkboxes
+
+```html
+<input type="checkbox" name="hobby" value="reading"> Reading
+<input type="checkbox" name="hobby" value="coding"> Coding
+```
+
+### 📌 6. Dropdown (Select)
+
+```html
+<select name="city">
+  <option value="lahore">Lahore</option>
+  <option value="karachi">Karachi</option>
+</select>
+```
+
+### 📌 7. Textarea (Multi-line input)
+
+```html
+<textarea name="message" rows="4" cols="30"></textarea>
+```
+
+### 📌 8. File Upload
+
+```html
+<input type="file" name="resume">
+```
+
+### 📌 9. Submit Button
+
+```html
+<input type="submit" value="Submit">
+```
+
+---
+
+## 🧠 Full Example:
+
+```html
+<form action="submit.php" method="post">
+  <label>Name:</label>
+  <input type="text" name="name" required><br><br>
+
+  <label>Email:</label>
+  <input type="email" name="email" required><br><br>
+
+  <label>Gender:</label>
+  <input type="radio" name="gender" value="male"> Male
+  <input type="radio" name="gender" value="female"> Female<br><br>
+
+  <label>Hobbies:</label>
+  <input type="checkbox" name="hobby" value="coding"> Coding
+  <input type="checkbox" name="hobby" value="reading"> Reading<br><br>
+
+  <label>City:</label>
+  <select name="city">
+    <option value="lahore">Lahore</option>
+    <option value="islamabad">Islamabad</option>
+  </select><br><br>
+
+  <label>Message:</label><br>
+  <textarea name="message" rows="4" cols="40"></textarea><br><br>
+
+  <input type="submit" value="Send">
+</form>
+```
+
+---
+
+## 🎨 Form Styling (CSS)
+
+```css
+form {
+  width: 300px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+}
+input, textarea, select {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 8px;
+}
+```
+
+---
+
+
+## 🔲 What Are Inline and Block Elements in HTML?
+
+In HTML, every element is either a:
+
+### 🔹 **Block-level element**
+
+OR
+
+### 🔹 **Inline element**
+
+These determine **how elements behave in a document flow** — whether they take up the full line or just enough space.
+
+---
+
+## 🧱 1. Block-Level Elements
+
+### ✅ Key Features:
+
+* Always **start on a new line**
+* Take **full width** of their parent container
+* Can contain **inline elements or other block elements**
+* Create **a "box"** on the page
+
+### 📘 Common Block Elements:
+
+```html
+<div>, <p>, <h1>–<h6>, <form>, <header>, <footer>, <section>, <article>, <table>, <ul>, <ol>, <li>
+```
+
+### 🧠 Example:
+
+```html
+<p>This is a paragraph.</p>
+<div>This is a div box.</div>
+```
+
+💡 Output:
+Each will appear on a **new line**, one after another.
+
+---
+
+## 📏 2. Inline Elements
+
+### ✅ Key Features:
+
+* **Do NOT start on a new line**
+* Only take up as much **width as needed**
+* **Cannot** contain block-level elements (only text or other inline elements)
+
+### 📘 Common Inline Elements:
+
+```html
+<span>, <a>, <img>, <strong>, <em>, <label>, <input>, <b>, <i>, <small>
+```
+
+### 🧠 Example:
+
+```html
+<p>This is <strong>bold</strong> and <em>italic</em> text.</p>
+```
+
+💡 Output:
+All content appears **on the same line**, unless it wraps naturally.
+
+---
+
+## 🎨 Visual Example
+
+```html
+<div style="background: lightblue;">Block Element</div>
+<span style="background: yellow;">Inline Element</span>
+<span style="background: pink;">Another Inline</span>
+```
+
+---
+
+## 🧰 Difference Summary:
+
+| Feature            | Block Elements         | Inline Elements     |
+| ------------------ | ---------------------- | ------------------- |
+| Starts on new line | ✅ Yes                  | ❌ No                |
+| Takes full width   | ✅ Yes                  | ❌ No                |
+| Contains           | Blocks & Inline        | Only Inline or Text |
+| Styling            | Margin, Padding, Width | Limited box styling |
+
+---
