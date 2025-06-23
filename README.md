@@ -843,3 +843,169 @@ All content appears **on the same line**, unless it wraps naturally.
 | Styling            | Margin, Padding, Width | Limited box styling |
 
 ---
+
+In CSS, both `ID` and `class` are used to apply styles to HTML elements, but they serve **different purposes** and have **different rules**. Here are the main differences:
+
+---
+
+### 🔹 1. **Syntax**
+
+| Feature  | ID        | Class        |
+| -------- | --------- | ------------ |
+| Selector | `#idName` | `.className` |
+| Example  | `#header` | `.menu`      |
+
+---
+
+### 🔹 2. **Uniqueness**
+
+| Property             | ID                     | Class                          |
+| -------------------- | ---------------------- | ------------------------------ |
+| How many times used? | Only **once per page** | Can be used **multiple times** |
+
+✅ **ID** must be unique.
+✅ **Class** can be shared across multiple elements.
+
+---
+
+### 🔹 3. **Specificity (Priority)**
+
+| Priority Level | ID has **higher specificity** than class |
+| -------------- | ---------------------------------------- |
+| Example        | If both are applied, the ID style wins   |
+
+```html
+<style>
+  #box { color: red; }
+  .box { color: blue; }
+</style>
+
+<div id="box" class="box">Text</div>
+```
+
+📌 Result: Text will be **red** because ID has higher priority.
+
+---
+
+### 🔹 4. **Usage**
+
+| ID                       | Class                              |
+| ------------------------ | ---------------------------------- |
+| Used for unique elements | Used for grouping similar elements |
+| Example: Header, footer  | Example: Buttons, list items, etc. |
+
+---
+
+### 🔹 5. **In HTML**
+
+```html
+<!-- ID -->
+<div id="mainHeader">Header Content</div>
+
+<!-- Class -->
+<div class="card">Card 1</div>
+<div class="card">Card 2</div>
+```
+
+---
+
+### ✅ Summary
+
+| Feature     | ID             | Class         |
+| ----------- | -------------- | ------------- |
+| Prefix      | `#`            | `.`           |
+| Unique?     | Yes            | No            |
+| Reusable?   | No             | Yes           |
+| Specificity | Higher         | Lower         |
+| Usage       | Unique element | Group styling |
+
+---
+
+
+
+## 🎧 `<audio>` Tag — For Playing Sound
+
+### ✅ Common Attributes:
+
+| Attribute  | Description                                                                   |
+| ---------- | ----------------------------------------------------------------------------- |
+| `src`      | The path to the audio file (can also use `<source>` inside).                  |
+| `controls` | Displays play/pause/volume UI.                                                |
+| `autoplay` | Starts playing audio automatically (may be blocked by browsers).              |
+| `loop`     | Repeats the audio once it ends.                                               |
+| `muted`    | Starts muted.                                                                 |
+| `preload`  | Controls how much audio is loaded before playing: `auto`, `metadata`, `none`. |
+
+### 🔧 Example:
+
+```html
+<audio controls autoplay loop preload="auto">
+  <source src="music.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+```
+
+---
+
+## 🎬 `<video>` Tag — For Playing Video
+
+### ✅ Common Attributes:
+
+| Attribute          | Description                                      |
+| ------------------ | ------------------------------------------------ |
+| `src`              | The video file (can also use `<source>` inside). |
+| `controls`         | Adds playback controls.                          |
+| `autoplay`         | Plays automatically (often requires `muted`).    |
+| `loop`             | Restarts video when it ends.                     |
+| `muted`            | Starts with no sound.                            |
+| `poster`           | A thumbnail image shown before the video plays.  |
+| `width` / `height` | Dimensions of the video player.                  |
+| `preload`          | Like audio, controls preload behavior.           |
+
+### 🔧 Example:
+
+```html
+<video width="500" controls poster="thumbnail.jpg" loop muted>
+  <source src="video.mp4" type="video/mp4">
+  Your browser does not support the video tag.
+</video>
+```
+
+---
+
+## 🌐 `<iframe>` Tag — For Embedding External Media (e.g., YouTube)
+
+### ✅ Common Attributes:
+
+| Attribute          | Description                                      |
+| ------------------ | ------------------------------------------------ |
+| `src`              | URL of the embedded media (e.g., YouTube video). |
+| `width` / `height` | Size of the frame.                               |
+| `frameborder`      | Border thickness (often set to `"0"`).           |
+| `allowfullscreen`  | Allows full-screen mode for videos.              |
+| `loading="lazy"`   | Delays loading for performance.                  |
+
+### 🔧 Example:
+
+```html
+<iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  frameborder="0" allowfullscreen loading="lazy">
+</iframe>
+```
+
+---
+
+## 💡 Quick Styling with CSS:
+
+```css
+audio, video, iframe {
+  display: block;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 10px;
+}
+```
+
+---
+
