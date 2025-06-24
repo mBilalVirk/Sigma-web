@@ -1009,3 +1009,37 @@ audio, video, iframe {
 
 ---
 
+**Semantic tags in HTML** are elements that clearly describe their meaning both to the browser and the developer. These tags help improve the structure, accessibility, SEO, and readability of a webpage.
+
+---
+
+### ✅ **Common Semantic Tags in HTML5:**
+
+| **Tag**        | **Meaning / Use**                                             |
+| -------------- | ------------------------------------------------------------- |
+| `<header>`     | Defines the header section of a page or section               |
+| `<nav>`        | Contains navigation links                                     |
+| `<main>`       | Represents the main content of the document                   |
+| `<section>`    | Represents a section in a document                            |
+| `<article>`    | Represents an independent piece of content (like a blog post) |
+| `<aside>`      | Contains content related to the main content (like a sidebar) |
+| `<footer>`     | Defines the footer for a section or page                      |
+| `<figure>`     | Used to group media elements (like images) with captions      |
+| `<figcaption>` | Caption for the `<figure>` element                            |
+| `<details>`    | Defines additional details the user can view or hide          |
+| `<summary>`    | A summary or label for the `<details>` element                |
+| `<mark>`       | Highlights text                                               |
+| `<time>`       | Represents a time or date                                     |
+| `<address>`    | Contact information for the author/owner                      |
+
+---
+
+### 🧠 **Why Use Semantic Tags?**
+
+* ✅ Makes HTML code more meaningful and organized
+* ✅ Improves accessibility (screen readers can better interpret content)
+* ✅ Helps search engines understand your page structure (SEO benefit)
+* ✅ Easier for developers to read and maintain the code
+
+---
+
