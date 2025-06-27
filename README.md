@@ -1043,3 +1043,59 @@ audio, video, iframe {
 
 ---
 
+# Travel Agency Page
+
+This is an HTML page for a fictional travel agency website, built to fulfill specific user stories from a web development lab exercise.
+
+## Features Implemented
+
+✅ **DOCTYPE Declaration**
+The page starts with `<!DOCTYPE html>`.
+
+✅ **HTML Element with Language**
+Root `<html>` tag has `lang="en"`.
+
+✅ **Head Metadata**
+
+* `<meta charset="utf-8">` for character encoding.
+* `<title>` tag set to **Travel Agency Page**.
+* SEO-friendly `<meta name="description">` tag.
+
+✅ **Content Structure**
+
+* **Main Heading (`<h1>`)**: "Explore Your Dream Destinations"
+
+* **Intro Paragraph** below `<h1>`.
+
+* **Subheading (`<h2>`)** for **Packages** section.
+
+* Paragraph introducing travel packages.
+
+* Unordered list with:
+
+  * Group Travels (link)
+  * Private Tours (link)
+
+* **Subheading (`<h2>`)** for **Top Itineraries** section.
+
+* Three `<figure>` elements each containing:
+
+  * An anchor `<a>` with:
+
+    * `href="https://www.freecodecamp.org/learn"`
+    * `target="_blank"`
+    * An `<img>` with a proper `src` and descriptive `alt` text.
+  * A `<figcaption>` describing the image.
+
+## Image Sources
+
+* Colosseum: ![Colosseum](https://cdn.freecodecamp.org/curriculum/labs/colosseo.jpg)
+* Alps: ![Alps](https://cdn.freecodecamp.org/curriculum/labs/alps.jpg)
+* Sea: ![Sea](https://cdn.freecodecamp.org/curriculum/labs/sea.jpg)
+
+## Demo Links
+
+All anchor links direct to [freeCodeCamp Learn](https://www.freecodecamp.org/learn).
+
+---
+

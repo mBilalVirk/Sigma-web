@@ -4,43 +4,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
-    <title>Sigma-Web</title>
 </head>
 
 <body>
-    <!-- <h1>Hello</h1>
-    <h2>This not what you think</h2>
-    <h2>OK</h2>
-    <p style="background-color: thistle;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt possimus
-        tempora, deleniti nam ducimus fugiat
-        labore obcaecati, voluptatum libero quia repudiandae deserunt hic. Nostrum saepe hic suscipit doloribus
-        voluptatem quas molestias qui ipsam illum quia perferendis, aliquam deleniti officia tempora exercitationem
-        sapiente quaerat repudiandae optio deserunt vel blanditiis aliquid! Accusantium?</p> -->
+    <header class="showcase">
+        <div class="showcase-top">
+            <img src="image/logo.png" alt="Netflix">
+            <a href="#" class="btn btn-rounded">Sign In</a>
+        </div>
+        <div class="showcase-content">
+            <h1>Unlimited movies, TV shows and more.</h1>
+            <p>Watch anywhere. Cancel anytime.</p>
+            <div class="email-form">
+                <input type="email" placeholder="Email address">
+                <a href="#" class="btn btn-xl">
+                    Get Started <i class="fas fa-chevron-right btn-icon"></i>
+                </a>
+            </div>
+        </div>
+    </header>
 
-    <!-- <h1>Sigma-Web </h1>
-    <p>Lorem ipsum dolor sit amet.</p>
-    <a href="http://">This is a link</a>
-    <div>The is block element</div>
-    <span>This is inline element</span><a href="http://">This is a link</a> -->
+    <section class="tabs">
+        <div class="container">
+            <div id="tab-1" class="tab-item tab-border">
+                <i class="fas fa-door-open fa-3x"></i>
+                <p class="hide-sm">Cancel anytime</p>
+            </div>
+            <div id="tab-2" class="tab-item">
+                <i class="fas fa-tablet-alt fa-3x"></i>
+                <p class="hide-sm">Watch anywhere</p>
+            </div>
+            <div id="tab-3" class="tab-item">
+                <i class="fas fa-tags fa-3x"></i>
+                <p class="hide-sm">Pick your price</p>
+            </div>
+        </div>
+    </section>
 
+    <section class="tab-content">
+        <div class="container">
+            <!-- Tab Content 1 -->
+            <div id="tab-1-content" class="tab-content-item show">
+                <div class="tab-1-content-inner">
+                    <div>
+                        <p class="text-lg">
+                            If you decide Netflix isn't for you - no problem. No commitment.
+                            Cancel online anytime.
+                        </p>
+                        <a href="#" class="btn btn-lg">Watch Free For 30 Days</a>
+                    </div>
+                    <img src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="">
+                </div>
+            </div>
 
-    <!-- video image and media visibility in webpage -->
+            <!-- Tab Content 2 would go here -->
+            <!-- Tab Content 3 would go here -->
+        </div>
+    </section>
 
-    <h1 style="text-align: center;">Video blow</h1>
-    <video src="AKHIL___RANG_GORA__Official_Video____BOB___Latest_Punjabi_Song_2018___Speed_Records(720p).mp4"
-        width="500" controls style="display: flex; align-items: center; margin: auto;" poster="image/a.png"></video>
-    <iframe src="https://www.codewithharry.com/tutorial/working-with-svg" frameborder="0"></iframe>
+    <section class="movie-showcase">
+        <h1 class="showcase-heading">Popular on Netflix</h1>
+        <div class="movie-row">
+            <div class="movie-item">
+                <img src="https://i.ibb.co/vXqDmnh/stranger-things.png" alt="Stranger Things">
+            </div>
+            <div class="movie-item">
+                <img src="https://i.ibb.co/N2F0kYz/peaky-blinders.png" alt="Peaky Blinders">
+            </div>
+            <div class="movie-item">
+                <img src="https://i.ibb.co/fQ6QCy3/daredevil.png" alt="Daredevil">
+            </div>
+            <div class="movie-item">
+                <img src="https://i.ibb.co/QfXK63P/the-crown.png" alt="The Crown">
+            </div>
+            <div class="movie-item">
+                <img src="https://i.ibb.co/YR0X01L/black-mirror.png" alt="Black Mirror">
+            </div>
+        </div>
+    </section>
 
-    <svg height="100" width="100">
-        <circle cx="50" cy="50" r="40" stroke="black" stroke-width="3" fill="red" />
-    </svg>
-    <iframe width="640" height="360"
-        src="https://www.youtube.com/embed/XZwBNDGuWGU?list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w"
-        title="Video, Audio &amp; Media in HTML | Sigma Web Development Course - Tutorial #10" frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <footer class="footer">
+        <p>Questions? Call 1-866-579-7172</p>
+        <div class="footer-cols">
+            <ul>
+                <li><a href="#">FAQ</a></li>
+                <li><a href="#">Investor Relations</a></li>
+                <li><a href="#">Ways To Watch</a></li>
+                <li><a href="#">Corporate Information</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Help Center</a></li>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Terms Of Use</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Account</a></li>
+                <li><a href="#">Redeem Gift Cards</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Speed Test</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Media Center</a></li>
+                <li><a href="#">Buy Gift Cards</a></li>
+                <li><a href="#">Cookie Preferences</a></li>
+                <li><a href="#">Legal Notices</a></li>
+            </ul>
+        </div>
+    </footer>
 </body>
 
 </html>
