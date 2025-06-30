@@ -1099,3 +1099,51 @@ All anchor links direct to [freeCodeCamp Learn](https://www.freecodecamp.org/lea
 
 ---
 
+# Video Compilation Page
+
+This HTML page is a **Video Compilation Page** created to satisfy specific user stories for a web development lab. The page is structured semantically and presents embedded videos with accompanying context.
+
+## User Stories Fulfilled
+
+✅ **Single Main Container**
+
+* The `<body>` contains only one child element: a `<main>` element.
+
+✅ **Page Title and Introduction**
+
+* Inside `<main>`, an `<h1>` element introduces the topic (e.g. "Nature Wonders on Film").
+* A paragraph below the `<h1>` explains what visitors will find on the page.
+
+✅ **Three Thematic Sections**
+
+* Three `<section>` elements follow the introduction.
+* Each section contains:
+
+  * An `<h2>` heading describing the video content.
+  * A paragraph giving a short description or context.
+  * An `<iframe>` element embedding a video.
+
+✅ **Iframe Requirements**
+
+* Each `<iframe>` has:
+
+  * A valid `src` pointing to a video (e.g. YouTube embeds).
+  * A `title` attribute describing what the video is about.
+  * Specified `height` and `width` attributes for proper display size.
+
+## Example Videos Embedded
+
+* **Video 1:** [Secret Life of Forests](https://www.youtube.com/embed/1i_J4J9cYj4)
+* **Video 2:** [Majestic Mountains Drone Footage](https://www.youtube.com/embed/vv2DSmy3Tro)
+* **Video 3:** [Underwater Wonders](https://www.youtube.com/embed/HQGA1JkG6Xs)
+
+*(Feel free to replace these URLs with your own video selections.)*
+
+## How to Use
+
+* Open the HTML file in a browser to see all embedded videos.
+* All sections include headings, context, and properly sized video players.
+
+---
+
+**Customize**: Replace text, videos, or styles to match your preferred theme (e.g. travel, music, sports, tech).
