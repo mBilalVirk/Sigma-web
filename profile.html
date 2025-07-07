@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Business Card</title>
+    <style>
+        /* Global Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #deb887;
+            /* light brown background */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .business-card {
+            background-color: #fff;
+            width: 100%;
+            max-width: 350px;
+            padding: 25px 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+            text-align: center;
+        }
+
+        .profile-image {
+            width: 100%;
+            max-width: 120px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+            box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+        }
+
+        .full-name {
+            font-size: 1.4em;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .designation {
+            font-size: 1em;
+            font-weight: 500;
+            color: #6b4f3b;
+            margin-bottom: 2px;
+        }
+
+        .company {
+            font-size: 0.95em;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        hr {
+            border: none;
+            height: 1px;
+            background-color: #ccc;
+            margin: 15px 0;
+        }
+
+        p {
+            margin: 5px 0;
+            color: #444;
+            font-size: 0.95em;
+        }
+
+        a {
+            display: inline-block;
+            margin: 5px 10px;
+            color: #5a3e1b;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        a:hover {
+            color: #8b5e3c;
+        }
+
+        .social-media {
+            margin-top: 15px;
+        }
+
+        .social-media h2 {
+            font-size: 1.1em;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        /* Responsive */
+        @media (max-width: 400px) {
+            .business-card {
+                padding: 20px 15px;
+                font-size: 15px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="business-card">
+        <img src="https://cdn.freecodecamp.org/curriculum/labs/flower.jpg" class="profile-image" alt="profile image" />
+        <p class="full-name">Bilal</p>
+        <p class="designation">Software Developer</p>
+        <p class="company">CCS</p>
+        <hr>
+        <p>abc@gmail.com</p>
+        <p>0202020202</p>
+        <a href="#">Portfolio</a>
+        <hr>
+        <div class="social-media">
+            <h2>Connect with me</h2>
+            <a href="#">Twitter</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">GitHub</a>
+        </div>
+    </div>
+</body>
+
+</html>
