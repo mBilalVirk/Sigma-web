@@ -1147,3 +1147,158 @@ This HTML page is a **Video Compilation Page** created to satisfy specific user 
 ---
 
 **Customize**: Replace text, videos, or styles to match your preferred theme (e.g. travel, music, sports, tech).
+
+
+# Cafe Menu Project - README
+
+This README file explains the HTML and CSS structure used in the **Cafe Menu** project. The goal of this simple web page is to display a styled cafe menu including coffee and desserts with proper layout, typography, and responsive design practices.
+
+---
+
+## HTML Tags Used
+
+### `<!DOCTYPE html>`
+
+Declares the document type and version of HTML.
+
+### `<html lang="en">`
+
+The root element of the page, with the language set to English.
+
+### `<head>`
+
+Contains metadata about the page like character set, title, styles, and viewport settings.
+
+### `<meta charset="utf-8">`
+
+Specifies the character encoding.
+
+### `<meta name="viewport">`
+
+Ensures the page is responsive by controlling layout on mobile browsers.
+
+### `<title>`
+
+Sets the title of the web page shown on the browser tab.
+
+### `<link href="styles.css" rel="stylesheet">`
+
+Links an external CSS file to style the HTML.
+
+### `<body>`
+
+The main visible part of the HTML document.
+
+### `<div class="menu">`
+
+A container div to wrap the entire menu content with styling.
+
+### `<main>`
+
+Semantic element that contains the primary content of the page.
+
+### `<h1>`, `<h2>`
+
+Headings: `h1` is the main title; `h2` is used for coffee and desserts section headings.
+
+### `<p>`
+
+Paragraphs of text. Different class names (`established`, `flavor`, `price`, `dessert`, etc.) are used for styling purposes.
+
+### `<hr>`
+
+Horizontal rule used as a separator between sections.
+
+### `<section>`
+
+Groups related content: one for Coffee, one for Desserts.
+
+### `<img>`
+
+Displays images (coffee and pie icons).
+
+### `<article class="item">`
+
+Used to group each menu item with its name and price.
+
+### `<footer>`
+
+Represents the footer of the document, which contains contact/address information.
+
+### `<address>`
+
+Semantic tag for contact information.
+
+### `<a href="...">`
+
+Anchor tag used to link to the FreeCodeCamp website.
+
+---
+
+## CSS Selectors & Styles Explained
+
+### `body`
+
+Sets background image, font family, and overall padding.
+
+### `h1`, `h2`
+
+Font sizes and font-family (`Impact, serif`) are customized.
+
+### `.established`
+
+Applies italic style to the establishment year.
+
+### `h1, h2, p`
+
+Centers text alignment.
+
+### `.menu`
+
+Sets layout width, background color, and center alignment.
+
+### `img`
+
+Centers the image and removes top spacing.
+
+### `hr`
+
+Custom styling for horizontal rules.
+
+### `.bottom-line`
+
+Adds margin above the final horizontal rule.
+
+### `.item p`
+
+Ensures inline-block display for flavor and price paragraphs.
+
+### `.flavor`, `.dessert`
+
+Left-aligns the flavor/dessert name and sets width to 75%.
+
+### `.price`
+
+Right-aligns the price and sets width to 25%.
+
+### `footer`
+
+Sets smaller font size.
+
+### `address`
+
+Disables default italic style.
+
+### `.address`
+
+Adds margin for spacing.
+
+### `a`, `a:visited`, `a:hover`, `a:active`
+
+Sets link color and hover/active effects to match the menu style.
+
+---
+
+## Summary
+
+This project uses semantic HTML5 elements (`main`, `section`, `article`, `footer`, etc.) and modern CSS practices (flexible box widths, fallback fonts, centered layout) to build a clean and responsive cafe menu. It's ideal for beginners learning how to structure and style web pages with clarity and readability.

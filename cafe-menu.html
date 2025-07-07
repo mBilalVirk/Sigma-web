@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cafe Menu</title>
+    <style>
+        /* Body */
+        body {
+            margin: 0;
+            background-image: url(https://cdn.freecodecamp.org/curriculum/css-cafe/beans.jpg);
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            padding: 20px;
+            color: #333;
+        }
+
+        /* Main Menu Container */
+        .menu {
+            max-width: 600px;
+            background: rgba(222, 184, 135, 0.95);
+            margin: 0 auto;
+            padding: 30px 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+        }
+
+        /* Headings */
+        h1,
+        h2 {
+            font-family: Impact, serif;
+            text-align: center;
+            margin: 0 0 15px 0;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            letter-spacing: 2px;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            margin-top: 40px;
+        }
+
+        /* Established Line */
+        .established {
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 20px;
+            color: #5a3e1b;
+        }
+
+        /* Horizontal Rule */
+        hr {
+            height: 3px;
+            background-color: #5a3e1b;
+            border: none;
+            margin: 20px auto;
+            width: 60%;
+        }
+
+        .bottom-line {
+            margin-top: 30px;
+        }
+
+        /* Images */
+        img {
+            display: block;
+            width: 80px;
+            margin: -10px auto 20px;
+        }
+
+        /* Items Grid */
+        .item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(255, 255, 255, 0.3);
+            margin: 8px 0;
+            padding: 10px 15px;
+            border-radius: 5px;
+        }
+
+        .item p {
+            margin: 0;
+            font-size: 1.1em;
+        }
+
+        .flavor,
+        .dessert {
+            flex: 1;
+            text-align: left;
+        }
+
+        .price {
+            text-align: right;
+            font-weight: bold;
+            flex-basis: 80px;
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            font-size: 0.9em;
+            color: #3b2a12;
+        }
+
+        address {
+            font-style: normal;
+            margin-top: 10px;
+        }
+
+        a {
+            color: #3b2a12;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:hover {
+            color: #7b4f22;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 600px) {
+            .menu {
+                padding: 20px 15px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            img {
+                width: 60px;
+            }
+
+            .price {
+                flex-basis: 60px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="menu">
+        <main>
+            <h1>CAMPER CAFE</h1>
+            <p class="established">Est. 2020</p>
+            <hr>
+            <section>
+                <h2>Coffee</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/coffee.jpg" alt="coffee icon" />
+                <article class="item">
+                    <p class="flavor">French Vanilla</p>
+                    <p class="price">$3.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Caramel Macchiato</p>
+                    <p class="price">$3.75</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Pumpkin Spice</p>
+                    <p class="price">$3.50</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Hazelnut</p>
+                    <p class="price">$4.00</p>
+                </article>
+                <article class="item">
+                    <p class="flavor">Mocha</p>
+                    <p class="price">$4.50</p>
+                </article>
+            </section>
+            <section>
+                <h2>Desserts</h2>
+                <img src="https://cdn.freecodecamp.org/curriculum/css-cafe/pie.jpg" alt="pie icon" />
+                <article class="item">
+                    <p class="dessert">Donut</p>
+                    <p class="price">$1.50</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cherry Pie</p>
+                    <p class="price">$2.75</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cheesecake</p>
+                    <p class="price">$3.00</p>
+                </article>
+                <article class="item">
+                    <p class="dessert">Cinnamon Roll</p>
+                    <p class="price">$2.50</p>
+                </article>
+            </section>
+        </main>
+        <hr class="bottom-line">
+        <footer>
+            <p><a href="https://www.freecodecamp.org" target="_blank">Visit our website</a></p>
+            <address>123 Free Code Camp Drive</address>
+        </footer>
+    </div>
+</body>
+
+</html>
